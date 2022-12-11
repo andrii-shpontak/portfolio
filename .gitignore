@@ -8,7 +8,6 @@
 
 # production
 /dist
-sass/
 
 # misc
 .DS_Store
