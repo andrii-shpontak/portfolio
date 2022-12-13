@@ -3,8 +3,8 @@
     &__wrapper {
         padding: 0 35px 0 52px;
         display: grid;
-        grid-template-columns: 400px 585px;
-        justify-content: space-between;
+        grid-template-columns: minmax(300px, 400px) minmax(300px, 585px);
+        column-gap: 50px;
     }
     &__photo {
         img {
@@ -41,9 +41,10 @@
     &__form {
         margin-top: 20px;
         display: grid;
-        grid-template: 45px 190px 45px / repeat(2, 280px);
+        grid-template: 45px 190px 45px / repeat(2, minmax(150px, 280px));
         justify-content: space-between;
         row-gap: 30px;
+        column-gap: 25px;
         label {
             position: absolute;
             height: 18px;
